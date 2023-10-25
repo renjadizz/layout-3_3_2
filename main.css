@@ -9,32 +9,45 @@ body {
 
 /* BLOCKS */
 
-.main {
+.wrapper {
     height: 100vh;
     width: 100vw;
     background-color: #F2F2F2;
     margin: 0 auto;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .header {
     width: 100vw;
-    max-height: 15vh;
+    height: 10vh;
     display: flex;
     justify-content: space-evenly;
     padding: 0.5rem;
 }
 
-/* ELEMENTS */
+.main {
+    display: flex;
+    overflow: scroll;
+    flex-wrap: wrap;
+    height: 90vh;
+    align-content: flex-start;
+}
 
-.header__side {
+.tab {
+    flex-shrink: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 1rem 1rem 2rem 1rem;
+
+}
+
+.tab-content {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
+
+/* ELEMENTS */
 
 .header__icon-background {
     display: flex;
@@ -42,15 +55,58 @@ body {
     align-items: center;
 }
 
+.header__logo-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo {
+    height: 80%;
+    width: 80%;
+}
+
 .header__icon-background__icon {
-    width: 60%;
-    height: 60%;
+    width: 65%;
+    height: 65%;
     aspect-ratio: 1;
 }
 
 .header__divider {
-    width: 60%;
-    height: 60%;
+    width: 65%;
+    height: 65%;
+}
+
+.tab__button {
+    border-style: none;
+    font-size: 18px;
+    font-family: 'TT Lakes Medium', sans-serif;
+    padding: 0.5rem;
+}
+
+.tab__button:hover {
+    border-style: solid;
+    border-color: #B8FFEC;
+    background-color: white;
+}
+
+.main__signboard {
+    height: 100%;
+    width: 100%;
+    min-width: 320px;
+    min-height: 176px;
+    max-width: 530px;
+    max-height: 307px;
+}
+
+.tab-content__text {
+    word-wrap: normal;
+    width: 50%;
+}
+
+.wrapper__h1 {
+    border-left: solid #41F6D7;
+    padding-left: 1rem;
 }
 
 /* MODIFIERS */
@@ -62,10 +118,17 @@ body {
 .header__icon-background--bg-circle {
     background-image: url("img/icon_bg.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
     background-position: center;
+    background-size: contain;
+    padding: 0 1rem;
 }
 
 .header__items--margin {
     margin: 1rem;
+}
+
+@media (max-width: 1060px) {
+    .tab-content__text {
+        width: 100%;
+    }
 }
