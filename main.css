@@ -5,6 +5,8 @@
 
 body {
     font-family: 'TT Lakes Medium', sans-serif;
+    margin: 0 auto;
+    padding: 0;
 }
 
 /* BLOCKS */
@@ -80,7 +82,7 @@ body {
 
 .tab__button {
     border-style: none;
-    font-size: 18px;
+    font-size: 1rem;
     font-family: 'TT Lakes Medium', sans-serif;
     padding: 0.5rem;
 }
@@ -110,6 +112,13 @@ body {
     padding-left: 1rem;
 }
 
+.tab-content__text-next {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 2rem;
+}
+
 /* MODIFIERS */
 
 .header--color {
@@ -128,8 +137,12 @@ body {
     margin: 1rem;
 }
 
-.tab-content__text--font-size{
+.tab-content__text--font-size {
     font-size: 16px;
+}
+
+.tab-content__text--bold {
+    font-weight: bold;
 }
 
 
@@ -137,4 +150,5 @@ body {
     .tab-content__text {
         width: 100%;
     }
+
 }
