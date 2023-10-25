@@ -4,25 +4,68 @@
 /* GENERAL STYLES */
 
 body {
-    background-color: var(--BGCOLOR);
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'TT Lakes Medium', sans-serif;
 }
 
 /* BLOCKS */
 
 .main {
+    height: 100vh;
+    width: 100vw;
+    background-color: #F2F2F2;
     margin: 0 auto;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
 
+.header {
+    width: 100vw;
+    max-height: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+}
+
 /* ELEMENTS */
 
+.header__side {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header__icon-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__icon-background__icon {
+    width: 60%;
+    height: 60%;
+    aspect-ratio: 1;
+}
+
+.header__divider {
+    width: 60%;
+    height: 60%;
+}
+
 /* MODIFIERS */
+
+.header--color {
+    background-color: white;
+}
+
+.header__icon-background--bg-circle {
+    background-image: url("img/icon_bg.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.header__items--margin {
+    margin: 1rem;
+}
