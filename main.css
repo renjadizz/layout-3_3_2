@@ -44,7 +44,8 @@ body {
 .tab-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 1rem;
 }
 
 /* ELEMENTS */
@@ -126,6 +127,11 @@ body {
 .header__items--margin {
     margin: 1rem;
 }
+
+.tab-content__text--font-size{
+    font-size: 16px;
+}
+
 
 @media (max-width: 1060px) {
     .tab-content__text {
